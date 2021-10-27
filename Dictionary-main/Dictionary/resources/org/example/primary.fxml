@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity"
+  minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0"
+  xmlns="http://javafx.com/javafx/17" fx:controller="org.example.PrimaryController">
+   <children>
+      <BorderPane prefHeight="480.0" prefWidth="480.0">
+         <bottom>
+            <AnchorPane BorderPane.alignment="CENTER" maxHeight="40.0" maxWidth="480.0"
+              prefHeight="40.0" prefWidth="480.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="480.0" pickOnBounds="true"
+                    preserveRatio="true">
+                     <image>
+                        <Image/>
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER" prefHeight="400.0" prefWidth="320.0"
+              fx:id="mainView">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="320.0" pickOnBounds="true"
+                    preserveRatio="true">
+                     <image>
+                        <Image/>
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <AnchorPane BorderPane.alignment="CENTER" prefHeight="400.0" prefWidth="160.0"
+              fx:id="mainView">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="160.0" pickOnBounds="true"
+                    preserveRatio="true">
+                     <image>
+                        <Image/>
+                     </image>
+                  </ImageView>
+                  <VBox layoutY="40.0" maxHeight="360.0" maxWidth="160.0" prefHeight="360.0"
+                    prefWidth="160.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#searchButton" prefHeight="50.0"
+                          prefWidth="160.0" text="Search">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="10.0"/>
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND"/>
+                           </cursor>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false"
+                          onAction="#editButton" prefHeight="50.0" prefWidth="160.0" text="Edit">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0"/>
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND"/>
+                           </cursor>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="101.0" mnemonicParsing="false"
+                          onAction="#historyButton" prefHeight="50.0" prefWidth="160.0"
+                          text="history">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0"/>
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND"/>
+                           </cursor>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="132.0" mnemonicParsing="false"
+                          onAction="#favoriteButton" prefHeight="50.0" prefWidth="160.0"
+                          text="Favorite">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0"/>
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND"/>
+                           </cursor>
+                           <effect>
+                              <Blend/>
+                           </effect>
+                        </Button>
+                        <TextField style="-fx-background-color: white;" onMouseClicked="#click"
+                          prefHeight="30.0" prefWidth="160.0" promptText="Enter word"
+                          fx:id="enterWord">
+                           <VBox.margin>
+                              <Insets bottom="10.0"/>
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER" prefHeight="40.0" prefWidth="458.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="480.0" layoutX="160.0" pickOnBounds="true"
+                    preserveRatio="true">
+                     <image>
+                        <Image/>
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="160.0" pickOnBounds="true"
+                    preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/BTL/Layer%201.png"/>
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
